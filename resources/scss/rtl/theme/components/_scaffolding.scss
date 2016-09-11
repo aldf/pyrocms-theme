@@ -1,0 +1,13 @@
+html,
+body {
+    height: 100%;
+    direction: rtl;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none;
+}
