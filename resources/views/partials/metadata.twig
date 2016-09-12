@@ -14,11 +14,7 @@
 
 {#{{ asset_add("theme.css", "theme::less/flat-ui/flat-ui.less") }}#}
 {{ asset_add("theme.css", "theme::less/fonts/fonts.less", ["parse"]) }}
-{% if config('streams::locales.supported.' ~ config('app.locale') ~ '.direction' ) == 'rtl'  %}
-	{{ asset_add("theme.css", "theme::scss/rtl/theme/theme.scss") }}
-{% else %}
-	{{ asset_add("theme.css", "theme::scss/theme/theme.scss") }}
-{% endif %}
+{{ asset_add("theme.css", "theme::scss/theme/theme.scss") }}
 {{ asset_add("theme.js", "theme::js/vendor/*") }}
 {{ asset_add("theme.js", "theme::js/libraries/tether.min.js") }}
 {{ asset_add("theme.js", "theme::js/libraries/*") }}
