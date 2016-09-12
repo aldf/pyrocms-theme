@@ -1,0 +1,25 @@
+.breadcrumb {
+    padding-top: 1em;
+    margin-bottom: 0;
+    background: transparent;
+    float: right;
+
+    > li {
+        font-size: $font-size-sm;
+        float: right;
+        a {
+            color: $breadcrumb-divider-color;
+        }
+
+        + li::before {
+            padding-left: .5rem;
+            padding-lright: .5rem;
+        }
+    }
+
+    > .active {
+        a {
+            color: $breadcrumb-active-color;
+        }
+    }
+}
