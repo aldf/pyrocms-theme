@@ -1,0 +1,269 @@
+// Bootstrap base styles
+@import "../bootstrap/bootstrap";
+*, *::before, *::after {
+    direction: rtl;
+	text-align: right;
+}
+// brand base styles
+#brand{
+	float: right;
+}
+// menu base styles
+#menu {
+    float: left;
+    margin: 1.1em 0 0 1.5em;
+
+      li {
+        margin-right: 1em;
+        &.dropdown {
+            padding-left: 0.75em;
+
+            &:after {
+                left: 0;
+            }
+        }
+
+        a {
+            float: right;
+        }
+        .media-body{
+                padding-right: 10px;
+            }
+
+        .dropdown-menu {
+            right: auto;
+            left: 0;
+            .arrow {
+                right: 75%;
+                margin-right: -11px;
+                border-right: 11px solid transparent;
+                border-left: 11px solid transparent
+            }
+        }
+    }
+        
+        
+}
+@include media-breakpoint-down(sm) {
+    #menu {
+    .arrow {
+		right: 95%;
+		}
+    }
+}
+// navigation base styles
+#navigation {
+    margin-right: 1.5em;
+}
+@media (max-width: 970px) {
+    #navigation {
+        margin-left: 0;
+    }
+}
+// buttons base styles
+#buttons {
+    float: left;
+    margin: 4em 0 0 1.5em;
+
+    &:not(:first-of-type) {
+            margin-right: 1em;
+        }
+}
+
+@include media-breakpoint-down(sm) {
+    #buttons {
+        margin: 1em 0 1.5em;
+
+        .btn {
+            
+            &:not(:first-of-type) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+// footer base styles
+#footer {
+    padding: 1em 3em;
+    background: darken($gray-lighter, 4%);
+    overflow: hidden;
+
+    ul {
+
+        &.pull-right {
+            float:left;
+        }
+
+        li {
+
+            &:not(:last-child) {
+                margin-left: 0.75em;
+            }
+
+            &.logo {
+                margin-left: 2em;
+            }
+        }
+    }
+}
+// menu base styles
+
+#menu {
+    float: left;
+    margin: 1.1em 0 0 1.5em;
+
+    li {
+        margin-right: 1em;
+
+        &.dropdown {
+            padding-left: 0.75em;
+
+            &:after {
+                left: 0;
+            }
+        }
+
+        .dropdown-menu {
+            left: 0;
+            right: auto;
+
+            .arrow {
+                right: 75%;
+                margin-right: -11px;
+                border-right: 11px solid transparent;
+                border-left: 11px solid transparent;
+            }
+            
+        }
+    }
+    
+}
+
+@include media-breakpoint-down(sm) {
+    #menu {
+        
+        li {
+            .dropdown-menu {
+                
+                .arrow {
+                    right: 95%;
+                }
+            }
+
+        }
+    }
+}
+// push
+#push {
+    .dismiss {
+        right: auto;
+        left: 1em;
+    }
+}
+//sections
+#sections {
+    margin: 1.5em 1.5em 0 0;
+
+    ul {
+        li {
+            a {
+                margin-left: 1em;
+            }
+
+            &:not(:last-child) {
+                a:after {
+                    right: auto;
+                    left: -0.75em;
+                }
+            }
+        }
+    }
+}
+//breadcrumb
+.breadcrumb {
+    float: right;
+
+    > li {
+        float: right;
+        + li::before {
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }
+    }
+}
+// nav
+.nav {
+    padding-right: 0;
+    &.nav-sections {
+        li {
+            a {
+                border-right: 1px solid $card-border-color;
+            }
+        }
+    }
+}
+// Base class
+// Nav inline
+
+.nav-inline {
+    .nav-item + .nav-item,
+    .nav-link + .nav-link {
+        margin-right: 1rem;
+    }
+}
+
+//
+// Tabs
+//
+
+.nav-tabs {
+    .nav-item {
+        float: right;
+
+        + .nav-item {
+            margin-right: .2rem;
+        }
+    }
+}
+
+//
+// Pills
+//
+
+.nav-pills {
+    .nav-item {
+        float: right;
+
+        + .nav-item {
+            margin-right: .2rem;
+        }
+    }
+}
+
+.nav-stacked {
+    .nav-item {
+        + .nav-item {
+            margin-right: 0;
+        }
+    }
+}
+
+.table thead th{
+    text-align: right;
+}
+ul.tree li .card .buttons {
+    float: left;
+    }
+
+.c-select {
+    background-position-x: left 0.75rem;
+}
+.select2-choices li {
+    float: right;
+}
+.form .controls .buttons {
+    float: left;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24 {
+    float: right;
+}
