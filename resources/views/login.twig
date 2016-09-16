@@ -17,12 +17,12 @@
                 <div class="form-group credentials">
 
                     {% if setting_value('anomaly.module.users::login') == 'username' %}
-                        {{ form_text("username", null, {'class': 'form-control', 'placeholder': 'Username'}) }}{{ icon('user') }}
+                        {{ form_text("username", null, {'class': 'form-control', 'placeholder': trans('anomaly.module.users::field.username.name')}) }}{{ icon('user') }}
                     {% else %}
-                        {{ form_email("email", null, {'class': 'form-control', 'placeholder': 'Email'}) }}{{ icon('envelope') }}
+                        {{ form_email("email", null, {'class': 'form-control', 'placeholder': trans('anomaly.module.users::field.email.name')}) }}{{ icon('envelope') }}
                     {% endif %}
 
-                    {{ form_password('password', {'class': 'form-control', 'placeholder': 'Password'}) }}{{ icon('locked') }}
+                    {{ form_password('password', {'class': 'form-control', 'placeholder': trans('anomaly.module.users::field.password.name')}) }}{{ icon('locked') }}
                 </div>
 
                 <div class="form-group">

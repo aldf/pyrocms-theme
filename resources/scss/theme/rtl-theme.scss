@@ -41,8 +41,8 @@
             }
         }
     }
-        
-        
+
+
 }
 @include media-breakpoint-down(sm) {
     #menu {
@@ -75,7 +75,7 @@
         margin: 1em 0 1.5em;
 
         .btn {
-            
+
             &:not(:first-of-type) {
                 margin-right: 0;
             }
@@ -133,18 +133,18 @@
                 border-right: 11px solid transparent;
                 border-left: 11px solid transparent;
             }
-            
+
         }
     }
-    
+
 }
 
 @include media-breakpoint-down(sm) {
     #menu {
-        
+
         li {
             .dropdown-menu {
-                
+
                 .arrow {
                     right: 95%;
                 }
@@ -266,4 +266,13 @@ ul.tree li .card .buttons {
 }
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24 {
     float: right;
+}
+.col-lg-offset-9 {
+    margin-right: 37.5%;
+}
+.radio label, .checkbox label {
+    padding-right: 1.25rem;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    margin-left: 0.25rem;
 }
