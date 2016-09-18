@@ -1,5 +1,5 @@
 {
-    "name": "pyrocms/pyrocms-theme",
+    "name": "aldf/pyrocms-theme",
     "type": "streams-addon",
     "description": "The official admin theme for PyroCMS.",
     "keywords": [
